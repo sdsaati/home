@@ -39,7 +39,7 @@ values."
      ;; ----------------------------------------------------------------
      helm
      auto-completion
-     better-defaults
+     ;;better-defaults
      emacs-lisp
      git
      lsp
@@ -60,7 +60,7 @@ values."
      html
      javascript
      latex
-     pandoc
+     ;; pandoc
      sql
      themes-megapack
      markdown
@@ -118,7 +118,7 @@ values."
    ;; If non-nil, a form that evaluates to a package directory. For example, to
    ;; use different package directories for different Emacs versions, set this
    ;; to `emacs-version'.
-   dotspacemacs-elpa-subdirectory nil
+dotspacemacs-elpa-subdirectory emacs-version 
    ;; One of `vim', `emacs' or `hybrid'.
    ;; `hybrid' is like `vim' except that `insert state' is replaced by the
    ;; `hybrid state' with `emacs' key bindings. The value can also be a list
@@ -150,7 +150,7 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(dichromacy
+   dotspacemacs-themes '(
                          spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
@@ -284,11 +284,7 @@ values."
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers '(:visual t
-                                       :disabled-for-modes dired-mode
-                                       doc-view-mode
-                                       pdf-view-mode
-                                       :size-limit-kb 1000)
+   dotspacemacs-line-numbers nil
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
