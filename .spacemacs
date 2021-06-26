@@ -63,7 +63,6 @@ values."
      ;; pandoc
      sql
      themes-megapack
-     markdown
      org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -72,7 +71,7 @@ values."
      syntax-checking
      version-control
      (c-c++ :variables
-           c-c++-default-mode-for-headers 'c++-mode)
+            c-c++-default-mode-for-headers 'c++-mode)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -118,7 +117,7 @@ values."
    ;; If non-nil, a form that evaluates to a package directory. For example, to
    ;; use different package directories for different Emacs versions, set this
    ;; to `emacs-version'.
-dotspacemacs-elpa-subdirectory emacs-version 
+   dotspacemacs-elpa-subdirectory emacs-version 
    ;; One of `vim', `emacs' or `hybrid'.
    ;; `hybrid' is like `vim' except that `insert state' is replaced by the
    ;; `hybrid state' with `emacs' key bindings. The value can also be a list
