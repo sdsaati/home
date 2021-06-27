@@ -25,3 +25,9 @@ vifm.exe
 ./vifm.exe / /
 exit
 vifm
+./download-them.sh 
+wget
+wget
+exit
+wget
+exit
