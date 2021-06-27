@@ -42,6 +42,9 @@ values."
                       auto-completion-enable-snippets-in-popup t
                       ;; auto-completion-enable-help-tooltip t
                       auto-completion-enable-sort-by-usage t
+                      auto-completion-minimum-prefix-length 2
+                      auto-completion-complete-with-key-sequence-delay 0.1
+                      auto-completion-return-key-behavior 'complete
      )
      ;;better-defaults
      emacs-lisp
@@ -121,7 +124,7 @@ values."
    ;; If non-nil, a form that evaluates to a package directory. For example, to
    ;; use different package directories for different Emacs versions, set this
    ;; to `emacs-version'.
-dotspacemacs-elpa-subdirectory emacs-version 
+dotspacemacs-elpa-subdirectory emacs-version
    ;; One of `vim', `emacs' or `hybrid'.
    ;; `hybrid' is like `vim' except that `insert state' is replaced by the
    ;; `hybrid state' with `emacs' key bindings. The value can also be a list
@@ -206,7 +209,7 @@ dotspacemacs-elpa-subdirectory emacs-version
    dotspacemacs-display-default-layout nil
    ;; If non nil then the last auto saved layouts are resume automatically upon
    ;; start. (default nil)
-   dotspacemacs-auto-resume-layouts t
+   dotspacemacs-auto-resume-layouts nil
    ;; Size (in MB) above which spacemacs will prompt to open the large file
    ;; literally to avoid performance issues. Opening a file literally means that
    ;; no major mode or minor modes are active. (default is 1)
