@@ -71,12 +71,19 @@ values."
      sql
      themes-megapack
      org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     (shell :variables
+             shell-default-height 30
+             shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
      version-control
+     ;; -----------------
+     ;; to lsp for cmake work,
+     ;; need to install this: pip install cmake-language-server
+     ;; -----------------
+     (cmake :variables
+            cmake-backend 'lsp
+            cmake-enable-cmake-ide-support t)
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode)
      )
