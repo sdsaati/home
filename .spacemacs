@@ -85,6 +85,7 @@ values."
             cmake-backend 'lsp
             cmake-enable-cmake-ide-support t)
      (c-c++ :variables
+            c-c++-backend 'lsp-clangd
             c-c++-default-mode-for-headers 'c++-mode)
      )
    ;; List of additional packages that will be installed without being
