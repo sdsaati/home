@@ -30,7 +30,8 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(windows-scripts
+   '(
+     windows-scripts
      markdown
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -78,6 +79,8 @@ values."
      ;; spell-checking
      syntax-checking
      version-control
+     (dap :variables
+          dap-enable-mouse-support t)
      ;; -----------------
      ;; to lsp for cmake work,
      ;; need to install this: pip install cmake-language-server
@@ -89,11 +92,11 @@ values."
             ;; lsp-client-clangd-executable
             c-c++-backend 'lsp-clangd
             ;; ccls-executable
-            c-c++-backend 'lsp-ccls
+            ;; c-c++-backend 'lsp-ccls
             c-c++-adopt-subprojects t
             c-c++-lsp-enable-semantic-highlight 'rainbow
             c-c++-lsp-semantic-highlight-method 'overlay
-            c-c++-dap-adapters 'dap-lldb
+            c-c++-dap-adapters '(dap-lldb)
             c-c++-enable-organize-includes-on-save t
             c-c++-enable-clang-format-on-save t
             c-c++-enable-auto-newline t
@@ -176,6 +179,8 @@ dotspacemacs-elpa-subdirectory emacs-version
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         twilight-bright
+                         twilight-anti-bright
                          spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
@@ -183,7 +188,7 @@ dotspacemacs-elpa-subdirectory emacs-version
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 18
+                               :size 17
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
