@@ -41,6 +41,7 @@ values."
      helm
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t
+                      auto-completion-private-snippets-directory 'snippets
                       ;; auto-completion-enable-help-tooltip t
                       auto-completion-enable-sort-by-usage t
                       auto-completion-minimum-prefix-length 2
