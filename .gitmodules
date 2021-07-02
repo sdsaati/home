@@ -1,0 +1,2 @@
+[submodule ".emacs.d"]
+	url = https://github.com/syl20bnr/spacemacs
