@@ -56,6 +56,7 @@ values."
      (treemacs :variables
                treemacs-use-follow-mode 'tag
                treemacs-use-filewatch-mode t
+               treemacs-lock-width nil
                treemacs-use-git-mode 'deferred)
      (python :variables
              python-backend 'lsp-ms
