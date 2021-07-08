@@ -56,6 +56,7 @@ values."
      (treemacs :variables
                treemacs-use-follow-mode 'tag
                treemacs-use-filewatch-mode t
+               treemacs-lock-width nil
                treemacs-use-git-mode 'deferred)
      (python :variables
              python-backend 'lsp-ms
@@ -73,7 +74,8 @@ values."
      ;; pandoc
      sql
      themes-megapack
-     org
+     (org :variables
+          org-enable-github-support t)
      (shell :variables
              shell-default-height 30
              shell-default-position 'bottom)
@@ -367,6 +369,7 @@ you should place your code here."
   ;; Set escape keybinding to "jk"
   (setq-default evil-escape-key-sequence "jk")
   (require 'gdscript-mode)
+  (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
