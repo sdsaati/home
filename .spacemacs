@@ -39,6 +39,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
+     epub
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-private-snippets-directory "~/.emacs.d/../snippets"
