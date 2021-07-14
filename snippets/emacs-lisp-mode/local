@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name:local
+# key:local
+# ${1:$(capitalize yas-text)}
+# --
+;; User has to fill this file manually
+;; ----------
+;; keybinds
+;; ----------
+;; SPC m p c	Run CMake and set compiler flags for auto-completion and flycheck
+;; SPC m p C	Run CMake if compilation database JSON file is not found
+;; SPC m p d	Remove file connected to current buffer and kill buffer, then run CMake
+;; SPC m p t	Run CTest
+;; ----------
+;; instead of a mode name we use nill
+((nil . ((eval . (setq
+                projectile-project-test-cmd #'helm-ctest
+                projectile-project-compilation-cmd #'helm-make-projectile
+                projectile-project-compilation-dir "${1:../out/bin}"
+                ))
+                (projectile-project-name . "${2:name}")
+                (projectile-project-run-cmd . "${3:./run.sh}")
+                (cmake-ide-project-dir . "${4:~/Projects/Temp_projects/clangd-test-prj}")
+         (cmake-ide-build-dir . "${4}/${1}")
+         (cmake-ide-cmake-opts . "-DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON")
+         (helm-make-build-dir . "${1}")
+         (helm-make-arguments . "-j7"))))
