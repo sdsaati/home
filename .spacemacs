@@ -42,7 +42,7 @@ values."
      epub
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t
-                      auto-completion-private-snippets-directory "~/.emacs.d/../snippets"
+                      auto-completion-private-snippets-directory "/home/ghost/Projects/settings/spacemacs/snippets"
                       ;; auto-completion-enable-help-tooltip t
                       auto-completion-enable-sort-by-usage t
                       auto-completion-minimum-prefix-length 2
@@ -184,15 +184,22 @@ dotspacemacs-elpa-subdirectory emacs-version
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         monokai
+                         sanityinc-tomorrow-eighties
+                         zenburn
+                         wilson
+                         molokai
+                         gruvbox
+                         gotham
+                         heroku
+                         spacemacs-dark
                          tango-plus
                          busybee
                          darkmine
                          espresso
-                         heroku
                          sanityinc-tomorrow-day
                          twilight-bright
                          twilight-anti-bright
-                         spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state nil
@@ -376,6 +383,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   ;; Set escape keybinding to "jk"
   (setq-default evil-escape-key-sequence "jk")
+  ;; YOU SHOULD have "godot" in your PATH environment variable
   (require 'gdscript-mode)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   )
@@ -406,7 +414,14 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(beacon-color "#f2777a")
+ '(company-quickhelp-color-background "#4F4F4F")
+ '(company-quickhelp-color-foreground "#DCDCCC")
  '(evil-want-Y-yank-to-eol nil)
+ '(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
+ '(frame-background-mode 'dark)
  '(hl-todo-keyword-faces
    '(("TODO" . "#dc752f")
      ("NEXT" . "#dc752f")
