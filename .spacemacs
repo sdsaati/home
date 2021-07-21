@@ -43,8 +43,9 @@ values."
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-private-snippets-directory "/home/ghost/Projects/settings/spacemacs/snippets"
-                      ;; auto-completion-enable-help-tooltip t
+                      auto-completion-enable-help-tooltip nil
                       auto-completion-enable-sort-by-usage t
+                      auto-completion-use-company-box nil
                       auto-completion-minimum-prefix-length 2
                       auto-completion-complete-with-key-sequence-delay 0.1
                       auto-completion-return-key-behavior 'complete
@@ -53,7 +54,10 @@ values."
      emacs-lisp
      git
      ;; lsp will try to find LSP server in your "path" variable
-     lsp
+     (lsp :variables
+          lsp-ui-doc-enable t
+          lsp-lens-enable t)
+
      (treemacs :variables
                treemacs-use-follow-mode 'tag
                treemacs-use-filewatch-mode t
@@ -70,6 +74,7 @@ values."
              python-test-runner 'pytest
              python-sort-imports-on-save t)
      html
+     debug
      javascript
      latex
      ;; pandoc
@@ -101,10 +106,11 @@ values."
             c-c++-adopt-subprojects t
             c-c++-lsp-enable-semantic-highlight 'rainbow
             c-c++-lsp-semantic-highlight-method 'overlay
-            c-c++-dap-adapters '(dap-lldb)
+            c-c++-dap-adapters '(dap-gdb)
             c-c++-enable-organize-includes-on-save t
+            c-c++-enable-clang-support t
             c-c++-enable-clang-format-on-save t
-            c-c++-enable-auto-newline t
+            c-c++-enable-auto-newline nil
             c-c++-default-mode-for-headers 'c++-mode)
      )
    ;; List of additional packages that will be installed without being
@@ -141,6 +147,9 @@ values."
    ;; `--insecure' which forces the value of this variable to nil.
    ;; (default t)
    dotspacemacs-elpa-https t
+   ;; don't hightlight search / results
+   evil-ex-substitute-highlight-all nil
+   evil-ex-search-persistent-highlight nil
    ;; Maximum allowed time in seconds to contact an ELPA repository.
    dotspacemacs-elpa-timeout 5
    ;; If non nil then spacemacs will check for updates at startup
@@ -184,23 +193,24 @@ dotspacemacs-elpa-subdirectory emacs-version
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         monokai
-                         sanityinc-tomorrow-eighties
-                         zenburn
-                         wilson
+                         spacemacs-light
                          molokai
-                         gruvbox
-                         gotham
-                         heroku
+                         monokai
                          spacemacs-dark
+                         sanityinc-tomorrow-day
+                         gotham
+                         gruvbox
+                         zenburn
                          tango-plus
+                         sanityinc-tomorrow-eighties
+                         wilson
+                         heroku
                          busybee
                          darkmine
                          espresso
-                         sanityinc-tomorrow-day
                          twilight-bright
                          twilight-anti-bright
-                         spacemacs-light)
+                         )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state nil
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
@@ -332,7 +342,7 @@ dotspacemacs-elpa-subdirectory emacs-version
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
