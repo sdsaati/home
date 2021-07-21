@@ -1,0 +1,129 @@
+# -*- mode: snippet -*-
+#name : cmake
+#key : cmake
+#contributor : Saeid Saati
+# --
+#--------------------------------------------------------------
+# CMakeList.txt: this is the main(root) cmake file
+#--------------------------------------------------------------
+# [[[
+cmake_minimum_required(VERSION 3.8)
+# ]]]
+#--------------------------------------------------------------
+# Define variables
+#--------------------------------------------------------------
+# [[[
+set(VERSION_MAJOR "1")
+set(VERSION_MINOR "0")
+set(VERSION_PATCH "0")
+set(APPNAME "${1:name}" CACHE STRING "The name of the application that is used as a target")
+set(CMAKE_BUILD_TYPE ${2:Debug} FORCE)
+set(CMAKE_INSTALL_PREFIX "\${PROJECT_BINARY_DIR}/install" CACHE STRING "Installation directory" FORCE)
+set(BUILD_SHARED_LIBS YES CACHE BOOL "Should it compile internal libs dynamically(instead of statically)?")
+option(CMAKE_CXX_STANDARD_REQUIRED "Make sure to have the cpp standard version" ON)
+option(CMAKE_EXPORT_COMPILE_COMMANDS "Generate lsp command file" ON)
+option(GIT_SUBMODULE "Update sub-modules during build" ON)
+set(VERSION "\${VERSION_MAJOR}.\${VERSION_MINOR}.\${VERSION_PATCH}")
+set(SRC_DIR "\${CMAKE_CURRENT_SOURCE_DIR}")
+# ]]]
+#--------------------------------------------------------------
+# project specifications
+#--------------------------------------------------------------
+# [[[
+# You need to create cmake_general.h.in file and put your
+# defines there, like : #define v @name_VERSION_MAJOR@
+# then you just need to include cmake_general.h in your project
+configure_file(cmake_general.h.in cmake_general.hpp)
+execute_process(
+  COMMAND \${CMAKE_COMMAND} -E copy_if_different
+  \${CMAKE_CURRENT_BINARY_DIR}/cmake_general.hpp
+  \${CMAKE_CURRENT_SOURCE_DIR}/cmake_general.hpp
+)
+project(\${APPNAME} VERSION 1.0 LANGUAGES CXX)
+# ]]]
+#--------------------------------------------------------------
+# submodule section
+# here we use the following code to support
+# old versions of git(that don't download submodule
+# contents automatically).
+#--------------------------------------------------------------
+# [[[
+find_package(Git QUIET)
+if(GIT_FOUND AND EXISTS "\${PROJECT_SOURCE_DIR}/.git")
+  if(GIT_SUBMODULE)
+    message(STATUS "Submodule update")
+    execute_process(
+      COMMAND \${GIT_EXECUTABLE} submodule update
+      --init --recursive
+      WORKING_DIRECTORY \${CMAKE_CURRENT_SOURCE_DIR}
+      RESULT_VARIABLE GIT_SUBMOD_RESULT
+    )
+    if(NOT GIT_SUBMOD_RESULT EQUAL "0")
+      message(FATAL_ERROR "Git submodule update --init failed with \${GIT_SUBMODULE_RESULT}, Please checkout submodules")
+    endif()
+  endif()
+endif()
+# ]]]
+#--------------------------------------------------------------
+# Include sub-projects/sub-modules.
+# for more information about submodules in git read link below:
+# https://web.archive.org/web/20210703145609/https://github.blog/2016-02-01-working-with-submodules/
+#--------------------------------------------------------------
+# [[[
+#add_subdirectory("")
+# ]]]
+#--------------------------------------------------------------
+# Define .hpp,.h folders and decides which folder is public(libs
+# that will be exports for others to use them) and which is just
+# for building the project(private), during the build and even
+# after install process
+#--------------------------------------------------------------
+# [[[
+add_executable(
+  \${APPNAME}
+  \${SRC_DIR}/main.cpp
+)
+target_include_directories(
+  \${APPNAME}
+  PUBLIC
+  # .hpp/.h of libs after install, use this folder
+  $<INSTALL_INTERFACE:src>
+  # .hpp/.h of libs on build time use below folder
+  $<BUILD_INTERFACE:\${CMAKE_CURRENT_SOURCE_DIR}>
+  PRIVATE
+  # .cpp and .hpp/.h files inside your src directory
+  \${CMAKE_CURRENT_SOURCE_DIR}
+  # maybe we need to search build dir too
+  \${CMAKE_CURRENT_BINARY_DIR}
+)
+# ]]]
+#--------------------------------------------------------------
+# linking section
+#--------------------------------------------------------------
+# [[[
+target_link_libraries(
+  \${APPNAME}
+  PUBLIC avformat
+)
+#]]]
+#--------------------------------------------------------------
+# specify compiler properties for the application
+#--------------------------------------------------------------
+# [[[
+target_compile_features(\${APPNAME} PRIVATE cxx_std_17)
+set(CMAKE_CXX_FLAGS "-D__STDC_CONSTANT_MACROS")
+# target_compile_options(JSONUtils PRIVATE -Werror)
+# ]]]
+#--------------------------------------------------------------
+# Generating compile_commands.json file for lsp servers
+#--------------------------------------------------------------
+# [[[
+if(EXISTS "\${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json")
+  execute_process(
+    COMMAND \${CMAKE_COMMAND} -E copy_if_different
+    \${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json
+    \${CMAKE_CURRENT_SOURCE_DIR}/compile_commands.json
+  )
+endif()
+# ]]]
+#--------------------------------------------------------------
