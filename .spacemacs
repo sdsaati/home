@@ -193,6 +193,7 @@ dotspacemacs-elpa-subdirectory emacs-version
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         sanityinc-solarized-dark
                          spacemacs-light
                          molokai
                          monokai
@@ -373,7 +374,7 @@ dotspacemacs-elpa-subdirectory emacs-version
    ;; `trailing' to delete only the whitespace at end of lines, `changed'to
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
-   dotspacemacs-whitespace-cleanup nil
+   dotspacemacs-whitespace-cleanup 'all
    ))
 
 (defun dotspacemacs/user-init ()
@@ -396,6 +397,7 @@ you should place your code here."
   ;; YOU SHOULD have "godot" in your PATH environment variable
   (require 'gdscript-mode)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
+  (setq-default buffer-file-coding-system 'dos)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
