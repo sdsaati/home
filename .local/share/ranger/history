@@ -25,7 +25,6 @@ open_with 4q
 shell 
 open_with 4
 net 
-net
 mkdir .git
 redraw_window 
 reload_cwd 
@@ -48,3 +47,4 @@ rename mpv_thumbnail_script.conf
 touch mpv.conf
 rename script-opts
 open_with 
+net

@@ -398,15 +398,20 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
 
-
   ;; =============================================================
   ;; My(Saeid Saati)'s global variables that I care about platform
   ;; =============================================================
 
-  (if (or (eq system-type 'cygwin) (eq system-type 'windows-nt) (eq system-type 'ms-dos))
-      (defvar snippet_path "e:/home/snippets")
-    (defvar snippet_path "/home/ghost/Projects/settings/spacemacs/snippets")
-    )
+  (if (or (equal system-type 'cygwin) (equal system-type 'windows-nt) (equal system-type 'ms-dos))
+    ;; if we are in windows
+      (progn
+        (setq snippet_path "e:/home/snippets")
+      )
+    ;; else if (we are in linux)
+      (progn
+        (setq snippet_path "/home/ghost/Projects/settings/spacemacs/snippets")
+      )
+  )
 
   ;; =============================================================
 
