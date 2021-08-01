@@ -1,1 +1,50 @@
+bash
+open_with emacs
+open_with vi
+open_with vim
+open_with runemacs
+shell runemacs.exe 
 
+shell runemacs.exe "$@"
+shell runemacs.exe @
+shell runemacs.exe -- "$@"
+shell runemacs.exe /cygdrive/e/home/.config/ranger/commands.py
+shell runemacs.exe E:\home\.config\ranger\commands.py
+shell runemacs.exe E:\\home\\.config\\ranger\\commands.py
+shell runemacs.exe e:/home/.config/ranger/commands.py
+shell runemacs.exe e:/home/.config/ranger/rifle.conf
+open_with explorer
+open_with explorer.exe
+open_with explorer.exe -- "$1"
+open_with explorer.exe "$1"
+open_with explorer.exe "$@"
+open_with run
+open_with q
+open_with qq
+open_with 4q
+shell 
+open_with 4
+net 
+net
+mkdir .git
+redraw_window 
+reload_cwd 
+open_with 0
+find dow
+find app
+find us
+find g
+search user
+search ghost
+find pi
+find projects
+search projects
+find ma
+find mp
+search mpv
+mkdir scripts
+mkdir lua-settings
+rename mpv_thumbnail_script.conf
+touch mpv.conf
+rename script-opts
+open_with 
