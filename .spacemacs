@@ -88,6 +88,7 @@ values."
      speed-reading
      themes-megapack
      (org :variables
+          org-projectile-file org_path
           org-enable-github-support t)
      (shell :variables
             shell-default-height 30
@@ -206,6 +207,8 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         twilight-anti-bright
+                         busybee
                          monokai
                          sanityinc-solarized-dark
                          spacemacs-light
@@ -219,11 +222,9 @@ values."
                          sanityinc-tomorrow-eighties
                          wilson
                          heroku
-                         busybee
                          darkmine
                          espresso
                          twilight-bright
-                         twilight-anti-bright
                          )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state nil
@@ -398,22 +399,24 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
 
-  ;; =============================================================
+  ;; =========================================================
   ;; My(Saeid Saati)'s global variables that I care about platform
-  ;; =============================================================
+  ;; =========================================================
 
   (if (or (equal system-type 'cygwin) (equal system-type 'windows-nt) (equal system-type 'ms-dos))
     ;; if we are in windows
       (progn
         (setq snippet_path "e:/home/snippets")
+        (setq org_path "d:/org-mode/todo/todo.org")
       )
     ;; else if (we are in linux)
       (progn
         (setq snippet_path "/home/ghost/Projects/settings/spacemacs/snippets")
+        (setq org_path "d:/org-mode/todo/todo.org")
       )
   )
 
-  ;; =============================================================
+  ;; =========================================================
 
   )
 (defun dotspacemacs/user-config ()
@@ -429,6 +432,13 @@ you should place your code here."
   (require 'gdscript-mode)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   (setq-default buffer-file-coding-system 'dos)
+  ;; =====================
+  ;; settings for org-mode
+  (with-eval-after-load 'org-agenda
+    (setq-default org-default-notes-file org_path)
+    (require 'org-projectile)
+    (push (org-projectile:todo-files) org-agenda-files))
+  ;; =====================
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -452,51 +462,52 @@ you should place your code here."
 This is an auto-generated function, do not modify its content directly, use
 Emacs customize menu instead.
 This function is called at the very end of Spacemacs initialization."
-  (custom-set-variables
-   ;; custom-set-variables was added by Custom.
-   ;; If you edit it by hand, you could mess it up, so be careful.
-   ;; Your init file should contain only one such instance.
-   ;; If there is more than one, they won't work right.
-   '(ansi-color-faces-vector
-     [default bold shadow italic underline bold bold-italic bold])
-   '(beacon-color "#f2777a")
-   '(company-quickhelp-color-background "#4F4F4F")
-   '(company-quickhelp-color-foreground "#DCDCCC")
-   '(evil-want-Y-yank-to-eol nil)
-   '(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
-   '(frame-background-mode 'dark)
-   '(hl-todo-keyword-faces
-     '(("TODO" . "#dc752f")
-       ("NEXT" . "#dc752f")
-       ("THEM" . "#2d9574")
-       ("PROG" . "#3a81c3")
-       ("OKAY" . "#3a81c3")
-       ("DONT" . "#f2241f")
-       ("FAIL" . "#f2241f")
-       ("DONE" . "#42ae2c")
-       ("NOTE" . "#b1951d")
-       ("KLUDGE" . "#b1951d")
-       ("HACK" . "#b1951d")
-       ("TEMP" . "#b1951d")
-       ("FIXME" . "#dc752f")
-       ("XXX+" . "#dc752f")
-       ("\\?\\?\\?+" . "#dc752f")))
-   '(package-selected-packages
-     '(ox-gfm git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter diff-hl yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode dash-functional helm-pydoc cython-mode company-anaconda anaconda-mode pythonic org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck auto-dictionary unfill smeargle orgit mwim magit-gitflow magit-popup magit magit-section helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-commit with-editor transient fuzzy company-statistics company-c-headers company auto-yasnippet yasnippet ac-ispell auto-complete disaster cmake-mode clang-format gdscript-mode mmm-mode markdown-toc markdown-mode gh-md paradox spaceline evil-unimpaired f evil-search-highlight-persist ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package undo-tree toc-org powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-tutor evil-surround highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg eval-sexp-fu elisp-slime-nav dumb-jump dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))
-   '(pdf-view-midnight-colors '("#655370" . "#fbf8ef"))
-   '(safe-local-variable-values
-     '((helm-make-arguments . "-j7")
-       (helm-make-build-dir . "../out/bin")
-       (projectile-project-run-cmd . "./run.sh")
-       (projectile-project-name . "name")
-       (eval setq projectile-project-test-cmd #'helm-ctest projectile-project-compilation-cmd #'helm-make-projectile projectile-project-compilation-dir "../out/bin")
-       (javascript-backend . tide)
-       (javascript-backend . tern)
-       (javascript-backend . lsp))))
-  (custom-set-faces
-   ;; custom-set-faces was added by Custom.
-   ;; If you edit it by hand, you could mess it up, so be careful.
-   ;; Your init file should contain only one such instance.
-   ;; If there is more than one, they won't work right.
-   )
-  )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(beacon-color "#f2777a")
+ '(company-quickhelp-color-background "#4F4F4F")
+ '(company-quickhelp-color-foreground "#DCDCCC")
+ '(evil-want-Y-yank-to-eol nil)
+ '(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
+ '(frame-background-mode 'dark)
+ '(hl-todo-keyword-faces
+   '(("TODO" . "#dc752f")
+     ("NEXT" . "#dc752f")
+     ("THEM" . "#2d9574")
+     ("PROG" . "#3a81c3")
+     ("OKAY" . "#3a81c3")
+     ("DONT" . "#f2241f")
+     ("FAIL" . "#f2241f")
+     ("DONE" . "#42ae2c")
+     ("NOTE" . "#b1951d")
+     ("KLUDGE" . "#b1951d")
+     ("HACK" . "#b1951d")
+     ("TEMP" . "#b1951d")
+     ("FIXME" . "#dc752f")
+     ("XXX+" . "#dc752f")
+     ("\\?\\?\\?+" . "#dc752f")))
+ '(org-agenda-files '("d:/org-mode/todo/todo.org"))
+ '(package-selected-packages
+   '(ox-gfm git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter diff-hl yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode dash-functional helm-pydoc cython-mode company-anaconda anaconda-mode pythonic org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck auto-dictionary unfill smeargle orgit mwim magit-gitflow magit-popup magit magit-section helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-commit with-editor transient fuzzy company-statistics company-c-headers company auto-yasnippet yasnippet ac-ispell auto-complete disaster cmake-mode clang-format gdscript-mode mmm-mode markdown-toc markdown-mode gh-md paradox spaceline evil-unimpaired f evil-search-highlight-persist ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package undo-tree toc-org powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-tutor evil-surround highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg eval-sexp-fu elisp-slime-nav dumb-jump dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))
+ '(pdf-view-midnight-colors '("#655370" . "#fbf8ef"))
+ '(safe-local-variable-values
+   '((helm-make-arguments . "-j7")
+     (helm-make-build-dir . "../out/bin")
+     (projectile-project-run-cmd . "./run.sh")
+     (projectile-project-name . "name")
+     (eval setq projectile-project-test-cmd #'helm-ctest projectile-project-compilation-cmd #'helm-make-projectile projectile-project-compilation-dir "../out/bin")
+     (javascript-backend . tide)
+     (javascript-backend . tern)
+     (javascript-backend . lsp))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+)

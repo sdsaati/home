@@ -1,2 +1,11 @@
-ThemeFile=nord
-Transparency=off
+ThemeFile=gruvbox
+Transparency=low
+Font=Fira Mono Medium
+FontHeight=11
+FontWeight=500
+FontSmoothing=full
+EmojiPlacement=full
+BoldAsFont=no
+Locale=C
+Charset=UTF-8
+OpaqueWhenFocused=yes

@@ -333,3 +333,10 @@ sudo
 pip install 'python-language-server[all]'
 python3.8.exe -m pip install 'python-language-server[all]'
 exit
+ls
+ll
+clear
+pwd
+cd ..
+ls
+exit
