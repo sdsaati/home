@@ -2,7 +2,6 @@ open_with vi
 open_with vim
 open_with runemacs
 shell runemacs.exe 
-
 shell runemacs.exe "$@"
 shell runemacs.exe @
 shell runemacs.exe -- "$@"
@@ -43,8 +42,9 @@ mkdir lua-settings
 rename mpv_thumbnail_script.conf
 touch mpv.conf
 rename script-opts
-net
 search projects
 open_with 
 find org
 touch TODOs.org
+
+net

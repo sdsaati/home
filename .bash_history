@@ -340,3 +340,15 @@ pwd
 cd ..
 ls
 exit
+ls
+ll
+ls -l
+vi
+exit
+lyns
+lynx
+lynx "https://web.archive.org/web/20210802015402/https://www.chrislockard.net/posts/spacemacs-org-mode-intro/"
+exit
+vifm
+apt-cyg install vifm
+apt-cyg install vifm

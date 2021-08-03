@@ -42,8 +42,15 @@ values."
      ;; ----------------------------------------------------------------
      helm
      epub
-
-
+     ;; ----------------------------------------------------------------
+     ;; Tabs
+     ;; Ctrl+shift+[] -> switch between tabs
+     ;; Ctrl+c t p    -> group buffer tabs by project
+     ;; ----------------------------------------------------------------
+     (tabs :variables
+           tabs-auto-hide 'nil
+           ;;tabs-auto-hide-delay 3
+           )
      ;;better-defaults
      emacs-lisp
      git
@@ -82,6 +89,8 @@ values."
 
      javascript
      php
+     ;; by pressing SPC a w /  (or C-c /) you can search
+     search-engine
      latex
      ;; pandoc
      sql
@@ -231,7 +240,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Fira Mono" ;;"Source Code Pro"
-                               :size 20
+                               :size 18
                                :weight normal
                                :width normal
                                :powerline-scale 1.0)
@@ -417,6 +426,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
   )
 
   ;; =========================================================
+  ;; Makeing the window bigger when spacemacs starts:
+  (setq initial-frame-alist '((top . 0) (left . 0) (width . 150) (height . 40)))
+  ;; =========================================================
 
   )
 (defun dotspacemacs/user-config ()
@@ -437,8 +449,10 @@ you should place your code here."
   (with-eval-after-load 'org-agenda
     (setq-default org-default-notes-file org_path)
     (require 'org-projectile)
-    (push (org-projectile:todo-files) org-agenda-files))
+    (push (org-projectile:todo-files) org-agenda-files)
+  )
   ;; =====================
+  (find-file org_path)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
