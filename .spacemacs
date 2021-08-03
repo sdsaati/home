@@ -421,7 +421,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
     ;; else if (we are in linux)
       (progn
         (setq snippet_path "/home/ghost/Projects/settings/spacemacs/snippets")
-        (setq org_path "d:/org-mode/todo/todo.org")
+        (setq org_path "/mnt/hgfs/D/org-mode/todo/todo.org")
       )
   )
 
