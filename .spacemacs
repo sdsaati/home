@@ -216,11 +216,11 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         spacemacs-light
+                         monokai
                          twilight-anti-bright
                          busybee
-                         monokai
                          sanityinc-solarized-dark
-                         spacemacs-light
                          sanityinc-tomorrow-day
                          spacemacs-dark
                          tango-plus
@@ -239,8 +239,16 @@ values."
    dotspacemacs-colorize-cursor-according-to-state nil
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Fira Mono" ;;"Source Code Pro"
-                               :size 18
+   dotspacemacs-default-font '(;;"Hermit"
+                               ;;"Binchotan_Sharp"
+;; fonts that looks good for light themes:
+                               "Fantasque Sans Mono"
+                               ;;"Fairfax HD"
+                               ;;"BPmono"
+                               ;;"Inconsolata Nerd Font"
+                               ;;"Comic Shanns Regular"
+                               ;;"Source Code Pro"
+                               :size 20
                                :weight normal
                                :width normal
                                :powerline-scale 1.0)
@@ -429,7 +437,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
   ;; Makeing the window bigger when spacemacs starts:
   (setq initial-frame-alist '((top . 0) (left . 0) (width . 150) (height . 40)))
   ;; =========================================================
-
+  (find-file org_path)
   )
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -438,6 +446,7 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+
   ;; Set escape keybinding to "jk"
   (setq-default evil-escape-key-sequence "jk")
   ;; YOU SHOULD have "godot" in your PATH environment variable
@@ -452,7 +461,6 @@ you should place your code here."
     (push (org-projectile:todo-files) org-agenda-files)
   )
   ;; =====================
-  (find-file org_path)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

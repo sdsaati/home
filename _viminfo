@@ -21,18 +21,35 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""0	LINE	0
+		cv::Mat screen_image;
+|3,1,0,1,1,0,1628045911,"	cv::Mat screen_image;"
 
 # File marks:
-'0  316  0  C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
-|4,48,316,0,1627778180,"C:\\Users\\ghost\\AppData\\Local\\Temp\\mpv_thumbs_cache\\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\\000023.bgra"
+'0  156  16  D:\Projects\main_projects\exap\exap\image.cpp
+|4,48,156,16,1628046201,"D:\\Projects\\main_projects\\exap\\exap\\image.cpp"
+'1  316  0  C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
+|4,49,316,0,1627778180,"C:\\Users\\ghost\\AppData\\Local\\Temp\\mpv_thumbs_cache\\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\\000023.bgra"
 
 # Jumplist (newest first):
+-'  156  16  D:\Projects\main_projects\exap\exap\image.cpp
+|4,39,156,16,1628046201,"D:\\Projects\\main_projects\\exap\\exap\\image.cpp"
+-'  1  0  D:\Projects\main_projects\exap\exap\image.cpp
+|4,39,1,0,1628045772,"D:\\Projects\\main_projects\\exap\\exap\\image.cpp"
+-'  316  0  C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
+|4,39,316,0,1627778180,"C:\\Users\\ghost\\AppData\\Local\\Temp\\mpv_thumbs_cache\\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\\000023.bgra"
 -'  316  0  C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
 |4,39,316,0,1627778180,"C:\\Users\\ghost\\AppData\\Local\\Temp\\mpv_thumbs_cache\\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\\000023.bgra"
 -'  1  0  C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
 |4,39,1,0,1627778173,"C:\\Users\\ghost\\AppData\\Local\\Temp\\mpv_thumbs_cache\\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\\000023.bgra"
+-'  1  0  C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
+|4,39,1,0,1627778173,"C:\\Users\\ghost\\AppData\\Local\\Temp\\mpv_thumbs_cache\\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\\000023.bgra"
 
 # History of marks within files (newest to oldest):
+
+> D:\Projects\main_projects\exap\exap\image.cpp
+	*	1628046164	0
+	"	156	16
 
 > C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
 	*	1627778179	0
