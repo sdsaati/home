@@ -71,7 +71,7 @@ values."
              ;; python-lsp-server 'mspyls
              python-pipenv-activate t
              ;; python-formatter 'yapf
-             python-format-on-save t
+             python-format-on-save nil
              python-test-runner 'pytest
              python-sort-imports-on-save t)
      html
