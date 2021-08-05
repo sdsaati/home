@@ -1,5 +1,2 @@
 [submodule ".emacs.d"]
 	url = https://github.com/syl20bnr/spacemacs
-[submodule "ranger"]
-	path = ranger
-	url = https://github.com/sdsaati/ranger.git
