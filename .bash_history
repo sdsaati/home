@@ -1,57 +1,3 @@
-pip install ranger
-ranger
-c:\python39\python.exe -m pip install --u
-c:\python39\python.exe -m pip install --u
-c:\python39\python.exe -m pip install --upgrade pip
-c:\\python39\\python.exe -m pip install --upgrade pip
-/cygdrive/c/python39/python.exe -m pip install --upgrade pip
-pip install ranger
-pip install ranger-fm
-python3.7 -m pip install ranger-fm
-python3.7 -m pip install ranger-fm
-/usr/bin/python3.7 -m pip install --upgrade pip
-pip
-emacs
-vifm
-
-export PATH=$PATH:/usr/lib/python3.7/site-packages
-pip
-whereis python
-cd /
-ls
-pwd
-vifm
-apt
-pacman
-rpm
-yay
-exit
-ranger
-ranger
-emacs
-emacs
-ranger
-exit
-mintty
-mintty --help
-mintty -e ranger
-mintty -e ranger /
-mintty -e ranger /cygdrive/
-whereis mintty
-exit
-ranger
-python -m ranger 
-python -m ranger-fm
-exit
-ranger
-exit
-ranger
-exit
-ranger
-exit
-ranger
-exit
-ranger
 exit
 whereis ranger
 mintty --help
@@ -352,3 +298,203 @@ exit
 vifm
 apt-cyg install vifm
 apt-cyg install vifm
+mpv
+mpv.exe
+exit
+exit
+vim rifle.conf 
+exit
+exit
+exit
+exit
+exit
+exit
+ranger
+ranger
+exit
+ranger
+ranger
+ranger
+ranger
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+$saeid
+echo $saeid
+echo -e $saeid
+exit
+exit
+echo $saeid
+exit
+exit
+echo $PWD
+echo $ranger_path
+env
+exit
+exit
+exit
+exit]
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+cd /cygdrive/e/home/
+ls -la
+exit
+e:
+cd e:
+ls
+cd home
+ls
+cd .config
+ls
+cd ranger
+ls
+exit
+echo $saeid
+env
+exit
+exit
+exit
+exit
+echo $saeid
+$saeid
+export
+export saeid=salam
+echo $saeid
+$saeid
+exit
+$saeid
+exit
+echo $SAEID
+exit
+exit
+echo $SAEID
+exit
+echo $SAEID
+exit
+echo $SAEID
+exit
+echo $SAEID
+exit
+echo $SAEID
+exit
+echo $SAEID
+$SAEID
+exit
+$SAEID
+$SAEID salam
+exit
+e:\home\run.py
+exit
+echo $RANGER_RUN
+$RANGER_RUN
+exit
+$RANGER_RUN
+echo $RANGER_RUN
+e:\\home\\run.py
+$RANGER_RUN
+$RANGER_RUN
+exit
+$RANGER_RUN
+echo $RANGER_RUN
+$RANGER_RUN
+$RANGER_RUN hi
+$RANGER_RUN "explorer.exe"
+python
+exit
+$RANGER_RUN
+exit
+$RANGER_PATH
+$RANGER_RUN
+exit
+$RANGER_RUN
+exit
+exit
+exit
+exit
+exit
+exit
+$!
+$@
+$$
+$?
+..
+.
+ls
+$RANGER_RUN
+$RANGER_RUN "Parallax Scrolling Website _ How to Make Website using Html CSS & Javascript.mp4" 
+$RANGER_RUN "Parallax Scrolling Website _ How to Make Website using Html CSS & Javascript.mp4" 
+exit
+$RANGER_RUN "Parallax Scrolling Website _ How to Make Website using Html CSS & Javascript.mp4" 
+$RANGER_RUN "Parallax Scrolling Website _ How to Make Website using Html CSS & Javascript.mp4" 
+$RANGER_RUN mpv.exe "Parallax Scrolling Website _ How to Make Website using Html CSS & Javascript.mp4"
+$RANGER_RUN mpv.exe "Parallax Scrolling Website _ How to Make Website using Html CSS & Javascript.mp4"
+$RANGER_RUN mpv.exe "Parallax Scrolling Website _ How to Make Website using Html CSS & Javascript.mp4"
+$RANGER_RUN mpv.exe "Parallax Scrolling Website _ How to Make Website using Html CSS & Javascript.mp4"
+exit
+exit
+ehco $RANGER_RUN
+echo $RANGER_RUN
+exit
+exit
+exit
+exit
+exit
+exit
+$RANGER_RUN
+$RANGER_RUN mpv.exe
+$RANGER_RUN mpv.exe /c/Users/ghost/Videos/Parallax\ Scrolling\ Website\ _\ How\ to\ Make\ Website\ using\ Html\ CSS\ \&\ Javascript.mp4 
+exit
+$RANGER_RUN emacsclient.exe rifle.conf 
+$RANGER_RUN emacsclient.exe rifle.conf 
+$RANGER_RUN emacsclient.exe rifle.conf &
+$RANGER_RUN emacsclient.exe rifle.conf
+jfkj
+a
+$RANGER_RUN emacsclient.exe rifle.conf &
+exit
+$RANGER_RUN
+$RANGER_RUN emacsclient.exe commands.py
+$RANGER_RUN emacsclient.exe rifle.conf 
+exit
+exit
+echo $RANGER_RUN
+echo $RANGER_RUN emacsclient.exe -create-frame --alternate-editor="" rifle.py
+$RANGER_RUN emacsclient.exe -create-frame --alternate-editor="" rifle.py
+$RANGER_RUN emacsclient.exe -create-frame --alternate-editor="" rifle.py
+$RANGER_RUN emacsclient.exe -create-frame --alternate-editor="" rifle.conf 
+$RANGER_RUN emacsclient.exe -create-frame --alternate-editor="" rifle.conf 
+exit
+$RANGER_RUN mpv.exe bypass\ easy\ anti-cheat..mp4 
+$RANGER_RUN mpv.exe \"bypass\ easy\ anti-cheat..mp4\" 
+exit
+$RANGER_RUN mpv.exe \?\?\?\?\?\?\?\ \?\?\?\?\?\?\?\?\?\?\?\ \?\?\ \?\?\?\ \?\?\?\?\?\?\?\ \?\?\?\?\ \?\?\?\ \?\?\?\?\?\?\?-rzfjnjYtGQ0.mp4 
+$RANGER_RUN mpv.exe \"\?\?\?\?\?\?\?\ \?\?\?\?\?\?\?\?\?\?\?\ \?\?\ \?\?\?\ \?\?\?\?\?\?\?\ \?\?\?\?\ \?\?\?\ \?\?\?\?\?\?\?-rzfjnjYtGQ0.mp4\" 
+exit
+exit

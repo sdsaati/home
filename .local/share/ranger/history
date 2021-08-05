@@ -1,31 +1,11 @@
-open_with vi
-open_with vim
-open_with runemacs
-shell runemacs.exe 
-shell runemacs.exe "$@"
-shell runemacs.exe @
-shell runemacs.exe -- "$@"
-shell runemacs.exe /cygdrive/e/home/.config/ranger/commands.py
-shell runemacs.exe E:\home\.config\ranger\commands.py
-shell runemacs.exe E:\\home\\.config\\ranger\\commands.py
-shell runemacs.exe e:/home/.config/ranger/commands.py
-shell runemacs.exe e:/home/.config/ranger/rifle.conf
-open_with explorer
-open_with explorer.exe
-open_with explorer.exe -- "$1"
-open_with explorer.exe "$1"
-open_with explorer.exe "$@"
 open_with run
 open_with q
 open_with qq
 open_with 4q
-shell 
-open_with 4
 net 
 mkdir .git
 redraw_window 
 reload_cwd 
-open_with 0
 find dow
 find app
 find us
@@ -43,8 +23,28 @@ rename mpv_thumbnail_script.conf
 touch mpv.conf
 rename script-opts
 search projects
-open_with 
 find org
 touch TODOs.org
-
 net
+open_with p
+open_with mpv
+find vie
+find po
+open_with j
+open_with 2
+shell  %s
+print($saeid)
+shell echo $saeid
+open_with 
+rename $RECYCLE.BIN
+
+shell 
+shell chmod +x run.py
+open_with 4
+delete
+open_with 0
+rename زودنیوز خیاری🤣خیار در صدر خبرها😱 کلیپ طنز زودنیوز-rzfjnjYtGQ0.mp4
+find vid
+rename pav recipe _ ladi pav _ लदी पाव रुई जैसा सॉफ्ट _ homemade pav _ eggless pav bread-f3_wo1zjUeA.mp4
+rename pav recipe _ ladi pav _ess pav bread-f3_wo1zjUeA.mp4
+q
