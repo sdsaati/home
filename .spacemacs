@@ -70,7 +70,7 @@ values."
              ;; python-lsp-server 'lsp-ms
              ;; python-lsp-server 'mspyls
              python-pipenv-activate t
-             python-formatter 'yapf
+             ;; python-formatter 'yapf
              python-format-on-save t
              python-test-runner 'pytest
              python-sort-imports-on-save t)
