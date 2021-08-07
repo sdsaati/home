@@ -100,7 +100,7 @@ values."
           org-projectile-file org_path
           org-enable-github-support t)
      (shell :variables
-            shell-default-height 30
+            shell-default-height 8
             shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
@@ -216,8 +216,8 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         monokai
                          spacemacs-light
+                         monokai
                          twilight-anti-bright
                          busybee
                          sanityinc-solarized-dark
@@ -239,10 +239,11 @@ values."
    dotspacemacs-colorize-cursor-according-to-state nil
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '(;;"Hermit"
+   dotspacemacs-default-font '(
+                               "Hermit"
                                ;;"Binchotan_Sharp"
 ;; fonts that looks good for light themes:
-                               "Fantasque Sans Mono"
+                               ;;"Fantasque Sans Mono"
                                ;;"Fairfax HD"
                                ;;"BPmono"
                                ;;"Inconsolata Nerd Font"
@@ -435,7 +436,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
   ;; =========================================================
   ;; Makeing the window bigger when spacemacs starts:
-  (setq initial-frame-alist '((top . 0) (left . 0) (width . 150) (height . 40)))
+  (setq initial-frame-alist '((top . 0) (left . 0) (width . 150) (height . 8)))
   ;; =========================================================
   (find-file org_path)
   )
@@ -447,6 +448,7 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
+  (global-set-key (kbd "C-s") 'spacemacs/search-engine-select)
   ;; Set escape keybinding to "jk"
   (setq-default evil-escape-key-sequence "jk")
   ;; YOU SHOULD have "godot" in your PATH environment variable
