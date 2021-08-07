@@ -25,7 +25,6 @@ rename script-opts
 search projects
 find org
 touch TODOs.org
-net
 open_with p
 open_with mpv
 find vie
@@ -48,3 +47,4 @@ find vid
 rename pav recipe _ ladi pav _ लदी पाव रुई जैसा सॉफ्ट _ homemade pav _ eggless pav bread-f3_wo1zjUeA.mp4
 rename pav recipe _ ladi pav _ess pav bread-f3_wo1zjUeA.mp4
 q
+net
