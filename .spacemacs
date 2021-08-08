@@ -249,7 +249,7 @@ values."
                                ;;"Inconsolata Nerd Font"
                                ;;"Comic Shanns Regular"
                                ;;"Source Code Pro"
-                               :size 20
+                               :size 18
                                :weight normal
                                :width normal
                                :powerline-scale 1.0)
