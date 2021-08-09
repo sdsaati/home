@@ -496,6 +496,7 @@ This function is called at the very end of Spacemacs initialization."
  '(beacon-color "#f2777a")
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
+ '(current-language-environment "UTF-8")
  '(evil-want-Y-yank-to-eol nil)
  '(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
  '(frame-background-mode 'dark)
@@ -533,5 +534,5 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "Hermit" :foundry "outline" :slant normal :weight normal :height 110 :width normal)))))
 )
