@@ -243,7 +243,7 @@ values."
                                ;; "Hermit"
                                ;;"Binchotan_Sharp"
                                ;; "Fairfax HD"
-			       ;; fonts that looks good for light themes:
+             ;; fonts that looks good for light themes:
                                ;;"Fantasque Sans Mono"
                                ;; "BPmono"
                                ;;"Inconsolata Nerd Font"
@@ -457,10 +457,12 @@ you should place your code here."
   (setq-default buffer-file-coding-system 'dos)
   ;; =====================
   ;; settings for org-mode
-  (with-eval-after-load 'org-agenda
-    (setq-default org-default-notes-file org_path)
+  (with-eval-after-load 'org
+    (with-eval-after-load 'org-agenda
     (require 'org-projectile)
+    (setq-default org-default-notes-file org_path)
     (push (org-projectile:todo-files) org-agenda-files)
+    )
   )
   ;; =====================
   )
@@ -537,5 +539,5 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:background nil :family "Comic Sans MS" :foundry "outline" :slant normal :weight normal :height 110 :width normal)))))
+ '(default ((t (:background nil :family "Comic Sans MS" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
 )
