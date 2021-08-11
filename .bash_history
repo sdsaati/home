@@ -1,12 +1,4 @@
 exit
-whereis ranger
-mintty --help
-git init
-exit
-ranger --help
-ranger --copy-config
-ranger --copy-config all
-exit
 exit
 [ --help
 [
@@ -497,4 +489,12 @@ exit
 $RANGER_RUN mpv.exe \?\?\?\?\?\?\?\ \?\?\?\?\?\?\?\?\?\?\?\ \?\?\ \?\?\?\ \?\?\?\?\?\?\?\ \?\?\?\?\ \?\?\?\ \?\?\?\?\?\?\?-rzfjnjYtGQ0.mp4 
 $RANGER_RUN mpv.exe \"\?\?\?\?\?\?\?\ \?\?\?\?\?\?\?\?\?\?\?\ \?\?\ \?\?\?\ \?\?\?\?\?\?\?\ \?\?\?\?\ \?\?\?\ \?\?\?\?\?\?\?-rzfjnjYtGQ0.mp4\" 
 exit
+exit
+sed -e 's~/FIT~/XYZ~g' "Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf" > out.pdf
+sed 's~/FIT~/XYZ~g' "Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf" > out.pdf
+sed 's#/Fit#/XYZ#g' "Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf" > out.pdf
+sed -b 's#/Fit#/XYZ#g' "Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf" > out.pdf
+sed -b 's#/Fit#/XYZ#g' "Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf" > out.pdf
+sed -b 's#/Fit#/XYZ#g' "Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+net
 exit
