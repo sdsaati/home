@@ -1,8 +1,8 @@
 ThemeFile=gruvbox
 Transparency=low
-Font=Fira Mono Medium
+Font=InputMono
 FontHeight=10
-FontWeight=500
+FontWeight=400
 FontSmoothing=full
 EmojiPlacement=full
 BoldAsFont=no

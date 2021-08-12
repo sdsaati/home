@@ -34,7 +34,6 @@ open_with 2
 shell  %s
 print($saeid)
 shell echo $saeid
-open_with 
 rename $RECYCLE.BIN
 
 shell 
@@ -48,3 +47,4 @@ rename pav recipe _ ladi pav _ लदी पाव रुई जैसा सॉ
 rename pav recipe _ ladi pav _ess pav bread-f3_wo1zjUeA.mp4
 q
 net
+open_with 
