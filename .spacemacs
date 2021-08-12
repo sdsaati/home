@@ -65,15 +65,18 @@ values."
                treemacs-lock-width nil
                treemacs-use-git-mode 'deferred)
      (python :variables
-             python-backend 'lsp-ms
-             ;; python-backend 'lsp
+             python-backend 'lsp
+             python-backend 'pylsp
+             ;;python-backend 'lsp-ms
              ;; python-lsp-server 'lsp-ms
              ;; python-lsp-server 'mspyls
              python-pipenv-activate t
-             ;; python-formatter 'yapf
-             python-format-on-save nil
+             python-formatter 'black
+             python-format-on-save t
              python-test-runner 'pytest
-             python-sort-imports-on-save t)
+             python-sort-imports-on-save t
+             python-auto-set-local-pyenv-version 'on-visit
+             python-fill-column 80)
      html
      debug
      (auto-completion :variables

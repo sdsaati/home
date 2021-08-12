@@ -46,32 +46,50 @@
 |3,1,36,0,1,0,1628695659,";"
 
 # File marks:
-'0  252  31  ~\.spacemacs
-|4,48,252,31,1628695863,"~\\.spacemacs"
-'1  250  31  ~\.spacemacs
-|4,49,250,31,1628695661,"~\\.spacemacs"
+'0  1  0  C:\Calibre Portable\Calibre Library\Al Sweigart\Beyond the Basic Stuff with Python (12)\Beyond the Basic Stuff with Pyt - Al Sweigart.fdf
+|4,48,1,0,1628742374,"C:\\Calibre Portable\\Calibre Library\\Al Sweigart\\Beyond the Basic Stuff with Python (12)\\Beyond the Basic Stuff with Pyt - Al Sweigart.fdf"
+'1  252  31  ~\.spacemacs
+|4,49,252,31,1628695863,"~\\.spacemacs"
 '2  250  31  ~\.spacemacs
 |4,50,250,31,1628695661,"~\\.spacemacs"
-'3  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,51,17260,416,1628660671,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+'3  250  31  ~\.spacemacs
+|4,51,250,31,1628695661,"~\\.spacemacs"
 '4  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,52,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
-'5  156  16  D:\Projects\main_projects\exap\exap\image.cpp
-|4,53,156,16,1628046201,"D:\\Projects\\main_projects\\exap\\exap\\image.cpp"
-'6  316  0  C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
-|4,54,316,0,1627778180,"C:\\Users\\ghost\\AppData\\Local\\Temp\\mpv_thumbs_cache\\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\\000023.bgra"
+|4,52,17260,416,1628660671,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+'5  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,53,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+'6  156  16  D:\Projects\main_projects\exap\exap\image.cpp
+|4,54,156,16,1628046201,"D:\\Projects\\main_projects\\exap\\exap\\image.cpp"
+'7  316  0  C:\Users\ghost\AppData\Local\Temp\mpv_thumbs_cache\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\000023.bgra
+|4,55,316,0,1627778180,"C:\\Users\\ghost\\AppData\\Local\\Temp\\mpv_thumbs_cache\\Andy- Yenafary Official Music Video-PijbIAJIj2U-416306132\\000023.bgra"
 
 # Jumplist (newest first):
+-'  1  0  C:\Calibre Portable\Calibre Library\Al Sweigart\Beyond the Basic Stuff with Python (12)\Beyond the Basic Stuff with Pyt - Al Sweigart.fdf
+|4,39,1,0,1628742374,"C:\\Calibre Portable\\Calibre Library\\Al Sweigart\\Beyond the Basic Stuff with Python (12)\\Beyond the Basic Stuff with Pyt - Al Sweigart.fdf"
+-'  252  31  ~\.spacemacs
+|4,39,252,31,1628695863,"~\\.spacemacs"
 -'  252  31  ~\.spacemacs
 |4,39,252,31,1628695863,"~\\.spacemacs"
 -'  250  31  ~\.spacemacs
 |4,39,250,31,1628695831,"~\\.spacemacs"
+-'  250  31  ~\.spacemacs
+|4,39,250,31,1628695831,"~\\.spacemacs"
+-'  250  31  ~\.spacemacs
+|4,39,250,31,1628695661,"~\\.spacemacs"
 -'  250  31  ~\.spacemacs
 |4,39,250,31,1628695661,"~\\.spacemacs"
 -'  540  123  ~\.spacemacs
 |4,39,540,123,1628695635,"~\\.spacemacs"
 -'  540  123  ~\.spacemacs
 |4,39,540,123,1628695635,"~\\.spacemacs"
+-'  540  123  ~\.spacemacs
+|4,39,540,123,1628695635,"~\\.spacemacs"
+-'  540  123  ~\.spacemacs
+|4,39,540,123,1628695635,"~\\.spacemacs"
+-'  1  0  ~\.spacemacs
+|4,39,1,0,1628695622,"~\\.spacemacs"
+-'  1  0  ~\.spacemacs
+|4,39,1,0,1628695622,"~\\.spacemacs"
 -'  1  0  ~\.spacemacs
 |4,39,1,0,1628695622,"~\\.spacemacs"
 -'  1  0  ~\.spacemacs
@@ -85,6 +103,18 @@
 -'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
 |4,39,17260,416,1628660671,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
 -'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,17260,416,1628660671,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,17260,416,1628660671,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,17260,416,1628660671,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,17260,416,1628660671,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
 |4,39,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
 -'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
 |4,39,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
@@ -92,6 +122,10 @@
 |4,39,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
 -'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
 |4,39,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  17260  416  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,17260,416,1628660567,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
 -'  16957  217  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
 |4,39,16957,217,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
 -'  16944  29  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
@@ -204,66 +238,38 @@
 |4,39,12489,111,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
 -'  12474  138  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
 |4,39,12474,138,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  10921  55  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,10921,55,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  10023  524  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,10023,524,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  8269  197  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,8269,197,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7901  514  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7901,514,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7551  154  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7551,154,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7055  572  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7055,572,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7044  497  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7044,497,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  6994  1518  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,6994,1518,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  6082  507  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,6082,507,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  6066  550  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,6066,550,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  10921  55  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,10921,55,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  10023  524  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,10023,524,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  8269  197  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,8269,197,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7901  514  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7901,514,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7551  154  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7551,154,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7055  572  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7055,572,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7044  497  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7044,497,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  6994  1518  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,6994,1518,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  6082  507  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,6082,507,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  6066  550  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,6066,550,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  10921  55  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,10921,55,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  10023  524  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,10023,524,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  8269  197  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,8269,197,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7901  514  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7901,514,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7551  154  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7551,154,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7055  572  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7055,572,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  7044  497  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,7044,497,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  6994  1518  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,6994,1518,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
--'  6082  507  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
-|4,39,6082,507,1628660564,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  16957  217  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,16957,217,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  16944  29  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,16944,29,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  16695  266  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,16695,266,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  15532  1045  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,15532,1045,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  12940  1  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,12940,1,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  12489  111  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,12489,111,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  12474  138  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,12474,138,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  16957  217  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,16957,217,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  16944  29  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,16944,29,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  16695  266  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,16695,266,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  15532  1045  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,15532,1045,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  12940  1  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,12940,1,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
+-'  12489  111  C:\Users\ghost\Documents\tmp\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf
+|4,39,12489,111,1628660565,"C:\\Users\\ghost\\Documents\\tmp\\Al Sweigart - Beyond the Basic Stuff with Python. Best Practices. (2021, No Starch Press) - libgen.li.pdf"
 
 # History of marks within files (newest to oldest):
+
+> C:\Calibre Portable\Calibre Library\Al Sweigart\Beyond the Basic Stuff with Python (12)\Beyond the Basic Stuff with Pyt - Al Sweigart.fdf
+	*	1628742372	0
+	"	1	0
 
 > ~\.spacemacs
 	*	1628695861	0
