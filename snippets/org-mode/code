@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name:writing codes in org-mode(yasnippet)
+# key:code
+# --
+#+begin_src $0
+#+end_src

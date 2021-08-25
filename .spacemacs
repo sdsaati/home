@@ -32,7 +32,8 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(lua
+   '(shell-scripts
+     lua
      windows-scripts
      markdown
      ;; ----------------------------------------------------------------
@@ -219,13 +220,13 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         spacemacs-dark
                          spacemacs-light
                          monokai
                          twilight-anti-bright
                          busybee
                          sanityinc-solarized-dark
                          sanityinc-tomorrow-day
-                         spacemacs-dark
                          tango-plus
                          molokai
                          gotham
@@ -242,7 +243,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state nil
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '(
+   dotspacemacs-default-font '("Input Mono Medium Italic"
                                ;; "Hermit"
                                ;;"Binchotan_Sharp"
                                ;; "Fairfax HD"
@@ -250,10 +251,10 @@ values."
                                ;;"Fantasque Sans Mono"
                                ;; "BPmono"
                                ;;"Inconsolata Nerd Font"
-                               "Comic Shanns Regular"
+                               ;;"Comic Shanns Regular"
                                ;;"Source Code Pro"
                                :size 18
-                               :weight normal
+                               :weight medium
                                :width normal
                                :powerline-scale 1.0)
    ;; The leader key
@@ -432,14 +433,14 @@ before packages are loaded. If you are unsure, you should try in setting them in
       )
     ;; else if (we are in linux)
       (progn
-        (setq snippet_path "/home/ghost/Projects/settings/spacemacs/snippets")
-        (setq org_path "/mnt/hgfs/D/org-mode/todo/todo.org")
+        (setq snippet_path "/run/media/sdsaati/nvme/home/snippets")
+        (setq org_path "/run/media/sdsaati/D/org-mode/todo/todo.org")
       )
   )
 
   ;; =========================================================
   ;; Makeing the window bigger when spacemacs starts:
-  (setq initial-frame-alist '((top . 0) (left . 0) (width . 150) (height . 50)))
+  ;; (setq initial-frame-alist '((top . 0) (left . 0) (width . 150) (height . 50)))
   ;; =========================================================
   (find-file org_path)
   )
@@ -523,9 +524,10 @@ This function is called at the very end of Spacemacs initialization."
      ("FIXME" . "#dc752f")
      ("XXX+" . "#dc752f")
      ("\\?\\?\\?+" . "#dc752f")))
- '(org-agenda-files '("d:/org-mode/todo/todo.org"))
+ '(org-agenda-files
+   '("/run/media/sdsaati/D/org-mode/todo/todo.org" "d:/org-mode/todo/todo.org"))
  '(package-selected-packages
-   '(ox-gfm git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter diff-hl yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode dash-functional helm-pydoc cython-mode company-anaconda anaconda-mode pythonic org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck auto-dictionary unfill smeargle orgit mwim magit-gitflow magit-popup magit magit-section helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-commit with-editor transient fuzzy company-statistics company-c-headers company auto-yasnippet yasnippet ac-ispell auto-complete disaster cmake-mode clang-format gdscript-mode mmm-mode markdown-toc markdown-mode gh-md paradox spaceline evil-unimpaired f evil-search-highlight-persist ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package undo-tree toc-org powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-tutor evil-surround highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg eval-sexp-fu elisp-slime-nav dumb-jump dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))
+   '(shfmt reformatter insert-shebang helm-gtags ggtags flycheck-bashate fish-mode counsel-gtags counsel swiper ivy company-shell git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter diff-hl yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode dash-functional helm-pydoc cython-mode company-anaconda anaconda-mode pythonic org-projectile org-category-capture org-present org-pomodoro alert log4e gntp org-mime org-download htmlize gnuplot flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck auto-dictionary unfill smeargle orgit mwim magit-gitflow magit-popup magit magit-section helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-commit with-editor transient fuzzy company-statistics company-c-headers company auto-yasnippet yasnippet ac-ispell auto-complete disaster cmake-mode clang-format gdscript-mode mmm-mode markdown-toc markdown-mode gh-md paradox spaceline evil-unimpaired f evil-search-highlight-persist ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package undo-tree toc-org powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hydra lv hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation helm-themes helm-swoop helm-projectile projectile pkg-info epl helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-tutor evil-surround highlight evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg eval-sexp-fu elisp-slime-nav dumb-jump dash s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))
  '(pdf-view-midnight-colors '("#655370" . "#fbf8ef"))
  '(safe-local-variable-values
    '((helm-make-arguments . "-j7")
@@ -542,5 +544,12 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:background nil :family "InputMono" :foundry "outline" :slant normal :weight normal :height 100 :width normal)))))
+ ;; ============================
+ ;; below line for normal emacs:
+ '(default ((t (:background nil :family "Input Mono" :slant italic :weight medium :height 127 :width normal :foundry "FBI "))))
+ ;; ============================
+ ;; below line for daemon-client emacs:
+ (setq default-frame-alist '((font . "Input Mono-14")))
+ ;; ============================
+ )
 )
