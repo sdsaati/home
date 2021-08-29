@@ -220,8 +220,8 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         spacemacs-dark
                          spacemacs-light
+                         spacemacs-dark
                          monokai
                          twilight-anti-bright
                          busybee
@@ -243,7 +243,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state nil
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Input Mono Medium Italic"
+   dotspacemacs-default-font '("Input Mono"
                                ;; "Hermit"
                                ;;"Binchotan_Sharp"
                                ;; "Fairfax HD"
@@ -254,7 +254,7 @@ values."
                                ;;"Comic Shanns Regular"
                                ;;"Source Code Pro"
                                :size 18
-                               :weight medium
+                               :weight normal
                                :width normal
                                :powerline-scale 1.0)
    ;; The leader key
@@ -544,12 +544,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- ;; ============================
- ;; below line for normal emacs:
- '(default ((t (:background nil :family "Input Mono" :slant italic :weight medium :height 127 :width normal :foundry "FBI "))))
- ;; ============================
- ;; below line for daemon-client emacs:
- (setq default-frame-alist '((font . "Input Mono-14")))
- ;; ============================
  )
+(add-to-list 'default-frame-alist
+             '(font . "Input Mono-13"))
 )
